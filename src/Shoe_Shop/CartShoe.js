@@ -1,15 +1,17 @@
 import React, { Component } from 'react'
 import { GIAM_SL, TANG_SL } from './constant/shoe_constant'
+import { NumericFormat } from 'react-number-format';
 
 export default class CartShoe extends Component {
   renderCart = () => { 
     let {cart} = this.props
     return cart.map((item) => { 
       let {name,price,image,soLuong,id} = item
+      let priceItem = price*soLuong
       return (
         <tr>
             <td>{name}</td>
-            <td>{price}</td>
+            <td><NumericFormat value={priceItem} thousandsGroupStyle="lakh" thousandSeparator="," displayType="text" renderText={(value) => <span>${value}</span>}/></td>
             <td>
               <button onClick={()=>{this.props.handleChangeQuantity(id,GIAM_SL)}}>-</button>
               <span className='mx-3'>{soLuong}</span>

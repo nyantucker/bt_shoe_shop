@@ -37,11 +37,24 @@
   }
 }
 
-a {
+.nav a {
   color: black;
+  display: flex;
+  justify-content: start;
 }
-
+.nav a i {
+  margin-right: 20px;
+  line-height: 24px;
+}
 .nav-pills .nav-link.active {
   color: white;
   background-color: black;
+}
+
+.card {
+  border: none;
+}
+
+.card-item {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }

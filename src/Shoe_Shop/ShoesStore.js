@@ -85,13 +85,13 @@ export default class ShoesStore extends Component {
     <div className='container mt-5'>
         <div className='row'>
                 <Nav_bar></Nav_bar>
-                <div class="tab-content col-9" id="v-pills-tabContent">
+                <div class="tab-content col-lg-10 col-sm-12" id="v-pills-tabContent">
                   <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                     <h1>WELCOME !!!</h1>
                     <img src="./have-a-great-day-feature-22.png" style={{width:"100%"}}></img>
                   </div>
                   <ProductList productsData={this.state.productsData} handleAddToCard={this.handleAddToCard} handleChangeModal={this.handleChangeModal}/>
-                  <CartShoe cart={this.state.cart} handleRemove={this.handleRemove} handleChangeQuantity={this.handleChangeQuantity}/>
+                  <CartShoe cart={this.state.cart} handleRemove={this.handleRemove} handleChangeQuantity={this.handleChangeQuantity} handleToLocalStrin={this.handleToLocalString}/>
                 </div>
         </div>
         <Modal productsDetail={this.state.productsDetail}/>

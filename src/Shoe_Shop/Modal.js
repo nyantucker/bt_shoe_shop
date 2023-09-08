@@ -15,8 +15,8 @@ export default class Modal extends Component {
             </div>
             <div className="modal-body" >
               <img style={{width:'100%'}} src={image}></img>
-              <div className='bg-light m-4 p-2'>
-              <h1>{price} $</h1>
+              <div className='bg-light m-4 p-2'style={{boxShadow:"rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px"}}> 
+              <h1>{price}$</h1>
               <h5>{shortDescription}</h5>
               <p>{description}</p>
               </div>
@@ -30,3 +30,4 @@ export default class Modal extends Component {
     )
   }
 }
+
