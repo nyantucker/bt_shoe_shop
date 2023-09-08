@@ -28,7 +28,7 @@ export default class CartShoe extends Component {
   render() {
     return (
        <div className="tab-pane fade" id="v-pills-cart" role="tabpanel" aria-labelledby="v-pills-cart-tab">
-        <h1>CART</h1>
+        <h1>YOUR CART</h1>
          <table className='table'>
           <thead>
             <th>Name</th>
